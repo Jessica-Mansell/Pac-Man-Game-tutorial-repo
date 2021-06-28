@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       case 37://up arrow
         if(pacmanCurrentIndex % width !== 0 && !squares[pacmanCurrentIndex -1].classList.contains('wall')) pacmanCurrentIndex -=1;
         break;
-      case 38:
+      case 38://left arrow
         if(pacmanCurrentIndex - width >= 0 && !squares[pacmanCurrentIndex -width].classList.contains('wall')) pacmanCurrentIndex -=width;
         break;
       case 39:
