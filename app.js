@@ -183,6 +183,11 @@ document.addEventListener('DOMContentLoaded', () => {
       //else find a new direction to try
     } else direction = directions[Math.floor(Math.random() * directions.length)];
 
+    //if the ghost is currently is scared
+    if (ghost.isScared) {
+      squares[ghost.currentIndex].classList.add('scared-ghost')
+    }
+
 
 
     }, ghost.speed);
