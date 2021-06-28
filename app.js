@@ -77,6 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
     switch (e.keyCode) {
       case 37://up arrow
         if(pacmanCurrentIndex % width !== 0 && !squares[pacmanCurrentIndex -1].classList.contains('wall')  && !squares[pacmanCurrentIndex -1].classList.contains('ghost-lair')) pacmanCurrentIndex -=1;
+
+        //check if pacman is in the left exit
+        if((pacmanCurrentIndex -1) === 363) {
+          pacmanCurrentIndex = 391;
+        }
+
         break;
       case 38://left arrow
         if(pacmanCurrentIndex - width >= 0 && !squares[pacmanCurrentIndex -width].classList.contains('wall') && !squares[pacmanCurrentIndex -width].classList.contains('ghost-lair')) pacmanCurrentIndex -=width;
