@@ -117,4 +117,30 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[pacmanCurrentIndex].classList.remove('pac-dot');
     }
   }
+  //create our Ghost template
+  class Ghost {
+    constructor(className, startIndex, speed) {
+      this.className = className;
+      this.startIndex = startIndex;
+      this.speed = speed;
+      this.currentIndex = startIndex;
+      this.timerId = NaN;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
