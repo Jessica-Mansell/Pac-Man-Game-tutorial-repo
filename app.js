@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       case 39://down arrow
         if(pacmanCurrentIndex % width < width -1 && !squares[pacmanCurrentIndex +1].classList.contains('wall')) pacmanCurrentIndex +=1;
         break;
-      case 40://test2
+      case 40://right arrow
         if(pacmanCurrentIndex + width < width * width && !squares[pacmanCurrentIndex +width].classList.contains('wall')) pacmanCurrentIndex +=width;
         break;
     }
