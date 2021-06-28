@@ -102,10 +102,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     squares[pacmanCurrentIndex].classList.add('pac-man');
-    //pacDotEaten()
+    pacDotEaten();
     //powerPelletEaten()
     //checkForGameOver()
     //checkForWin()
   }
   document.addEventListener('keyup', movePacman);
+
+  //what happens when Pac-man eats a pac-dot
+  function pacDotEaten() {
+    if(squares[pacmanCurrentIndex].classList.contains('pac-dot')) {
+      score++;
+      scoreDisplay.innerHTML = score;
+      squares[pacmanCurrentIndex].classList.remove('pac-dot');
+    }
+  }
 });
