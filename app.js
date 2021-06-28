@@ -135,6 +135,11 @@ document.addEventListener('DOMContentLoaded', () => {
     new Ghost('clyde', 379, 500)
   ]
 
+  //draw my ghosts onto the grid
+  ghosts.forEach(ghost => {
+    squares[ghost.currentIndex].classList.add(ghost.className);
+    squares[ghost.currentIndex].classList.add('ghost');
+  })
 
 
 
