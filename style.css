@@ -12,8 +12,8 @@
 }
 
 .pac-dot {
-    background-color: green;
-    border: 5px solid white;
+    background-color: rgb(252, 193, 149);
+    border: 6px solid white;
     box-sizing: border-box;
 }
 
@@ -22,8 +22,8 @@
 }
 
 .power-pellet {
-    background-color: green;
-    border-radius: 10px;
+    background-color: rgb(235, 208, 188);
+    border-radius: 12px;
 }
 
 .blinky {
